@@ -1,0 +1,6 @@
+TSandECMA5/proj001/node_modules
+TSandECMA5/proj001/node_modules/*
+TSandECMA5/proj001/scripts/js
+TSandECMA5/proj001/*.log
+npm-debug.log
+Angular/angularproj001/node_modules
