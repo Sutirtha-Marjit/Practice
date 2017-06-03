@@ -1,0 +1,75 @@
+.brand-logo{
+    width: 40px;
+    background: url("../../resources/logo.png") no-repeat center center;
+    height: 30px;
+    display: block;
+    float: left;
+    background-size: 100% auto;
+    margin-left:10px;
+
+}
+
+.user-pic{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.teach-list-row{
+    padding: 10px;
+    color:white;
+}
+
+.teach-list-row .col-md-2{
+ background: rgba(0,0,0,0.2);
+ padding: 15px;
+ border-radius:5px;  
+}
+
+.teach-list-row .col-md-2 img{
+    display: block;
+    margin: 0 auto;    
+}
+
+.teach-list-row .col-md-2 h4{
+    text-align: center;  
+}
+
+
+.app-base{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden; 
+}
+
+div.app-base{
+    font-family: "Calibri";
+    opacity: 1;
+}
+.app-main-screen-bg{
+    background: linear-gradient(to bottom, #9ed883 0%,#06a09e 100%);
+}
+
+.app-main-screen-bg a{
+    color:white;
+}
+
+.app-base header{
+    padding-top:4px; 
+    height: 40px;
+    width: 100%; 
+    background: rgba(0,0,0,0.6);
+}
+.app-base .app-base-container{
+    width: 100%;
+    height: calc( 100% - 80px);
+    overflow-y: auto;
+}
+
+.app-base footer{
+    height: 40px;
+    width: 100%; 
+    background: rgba(0,0,0,0.7);
+}

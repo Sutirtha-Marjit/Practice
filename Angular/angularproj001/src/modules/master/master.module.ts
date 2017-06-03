@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import {MasterComponent} from './master.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    MasterComponent
   ],
   imports: [
     BrowserModule,
@@ -15,8 +16,12 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MasterComponent]
 })
-export class AppModule { 
-  
+
+export class MasterModule{
+    constructor(){
+       console.log(BrowserModule);
+        
+    }
 }
