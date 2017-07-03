@@ -1,0 +1,30 @@
+
+@media (max-width: 1024px){
+        .zone-button{
+        background-size:100% auto; 
+    }
+
+    .dashboard-console{
+        width:60%;
+    }
+}
+
+@media (max-width: 768px){
+    .zone-button{
+        background-size:auto 100%; 
+        height: 370px;
+
+    }
+
+    .zone-button.student,.zone-button.teacher{
+        height: 230px;
+        background-size:100% auto; 
+    }
+
+    .dashboard-console{
+        width:100%;
+    }
+
+    
+}
+

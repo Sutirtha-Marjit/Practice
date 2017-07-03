@@ -1,0 +1,18 @@
+
+<div class="container-fluid">
+<h1>  {{title}} </h1>
+<br/>
+<div class="btn-group">
+  <a class="btn btn-sm btn-default" routerLink="">Home</a>
+  <a class="btn btn-sm btn-default" routerLink="">About us</a>
+  <a class="btn btn-sm btn-info" routerLink="student-list"><span class="glyphicon glyphicon-th-list"></span> &nbsp; List</a>
+  <a class="btn btn-sm btn-info" routerLink="student-grid"><span class="glyphicon glyphicon-th"></span> &nbsp; Grid</a>
+</div>
+
+<a class="btn btn-sm btn-success" routerLink="registration"><span class="glyphicon glyphicon-plus-sign"></span> &nbsp; Register</a>
+
+<hr/>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+</div>

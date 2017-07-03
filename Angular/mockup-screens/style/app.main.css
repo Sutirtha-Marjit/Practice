@@ -1,0 +1,211 @@
+body *{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+header{
+    padding-top:12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+header a{
+    color:#444;
+}
+.zone-button-container{
+    padding-right:0px;
+    padding-left: 0px; 
+}   
+.zone-button{
+    margin: 0px;
+padding: 0px;
+background-position:center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 500px; 
+}
+
+.white-bordered{
+    border:1px solid rgba(256,256,256,0.6);
+    background: transparent;
+    color:white;
+    transition: border-color color 0.6s;
+}
+.white-bordered:hover{
+    border-color:#0099FF;
+    color:#0099FF;
+    background: transparent;
+}
+
+.zone-button.teacher{
+    background-image:url('http://bit.ly/2syl8Rw');
+}
+
+.zone-button.login{
+    background-image:url('http://bit.ly/2rFXimF'); 
+}
+
+.zone-button.student{
+    background-image:url("https://wustl.edu/wp-content/uploads/2014/09/reading.jpg");
+    
+}
+
+
+
+.zone-button *{
+    color:rgba(256,256,256,1);
+
+}
+
+.zone-button-inner{
+padding: 20px;    
+background-color:rgba(0,0,0,0.90); 
+height: 100%;
+transition: background-color 1s;
+}
+
+.zone-button-inner h3{
+    font-weight: normal;
+}
+
+.zone-button-inner:hover{
+    background-color:rgba(0,0,0,0.7);
+}
+
+.zone-button hr{
+    width: 45%;
+    opacity: 0.3;
+}
+
+.circle-encompass{
+    display:block;
+    padding:22px 5px 5px 5px;
+    width:75px;
+    height:75px;  
+    border-radius:70px;
+    border:3px solid rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+.zero-grid-container{
+    margin: 0px;
+    padding: 0px;
+}
+
+.zero-grid-container>*{
+    margin: 0px;
+    padding: 0px;
+} 
+
+.resource-box{
+    height:300px;
+    background:rgba(0,0,0,0.3); 
+}
+
+.resource-box hr{
+    width:60%;
+}
+
+.resource-box{
+
+}
+
+.zero-grid-container>.resource-box:nth-child(odd){
+ background: white;
+}
+
+
+.resource-box img{
+    width:100%;
+    height: auto; 
+}
+.resource-box .resource-image-container{
+   margin: 20px auto; 
+}
+.resource-detail{
+    text-align: center;
+}
+.resource-image-container{
+    width:110px;
+    height: 110px;
+    border-radius: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sandwitch-menu-container{
+    position:absolute;
+    width: 50px;
+    height: 100%;
+    background: black;
+    right: 0px;
+    top:0px;  
+}
+
+.sandwitch-menu-container a.btn{
+ width: 100%;
+ height: 100%;
+ color: white;
+ padding-top:20px;
+ background: transparent;
+ border-radius: 0px;
+}
+
+.sandwitch-menu-container a.btn:hover{
+    background:#ccc;
+    color:black;
+
+}
+
+.app-header{
+    position: relative;
+    height: 58px;
+    border-bottom: rgba(0,0,0,0.2) solid 1px;
+}
+
+.dashboard-console{
+    transform: translateX(0%);
+    transition: all 1s;
+    position: fixed;
+    width:45%;
+    height: 100%;
+    top:0;
+    right:0;
+    z-index: 989;
+    border-left:5px solid rgb(0,153,255); 
+    background:rgba(255,255,255,1);  
+    -webkit-box-shadow: -10px 0px 30px 10px rgba(0,0,0,0.27);
+-moz-box-shadow: -10px 0px 30px 10px rgba(0,0,0,0.27);
+box-shadow: -10px 0px 30px 10px rgba(0,0,0,0.27);
+}
+
+.h-search-box:after{
+    padding-bottom: 20px;
+}
+
+.dashboard-console.closed{
+    transform: translateX(120%);
+}
+
+.console-popup{
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.console-popup .inner{
+    width:95%;
+    height:95%;
+    background:rgba(255,255,255,1);
+    border-radius: 8px;
+    padding: 10px;
+    margin:2.5%;      
+}
