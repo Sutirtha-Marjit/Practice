@@ -1,0 +1,19 @@
+{
+  "name": "googleauth",
+  "version": "1.0.0",
+  "description": "googleauth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "googleauth"
+  ],
+  "dependencies":{},
+  "devDependencies":{
+    "express":"*"    
+  },
+
+  "author": "sutirtha.social.marjit@gmail.com",
+  "license": "ISC"
+}
