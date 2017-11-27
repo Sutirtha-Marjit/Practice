@@ -9,11 +9,12 @@
   "keywords": [
     "googleauth"
   ],
-  "dependencies":{},
-  "devDependencies":{
-    "express":"*"    
+  "dependencies": {
+    "express": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "passport-google-oauth": "*"
   },
-
   "author": "sutirtha.social.marjit@gmail.com",
   "license": "ISC"
 }

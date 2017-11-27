@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { RegistrationformComponent } from './comp/registrationform/registrationform.component';
 import { StudentlistComponent } from './comp/studentlist/studentlist.component';
 import { StudentgridComponent } from './comp/studentgrid/studentgrid.component';
+import { MoistDirective } from './directives/moist.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationformComponent,
     StudentlistComponent,
-    StudentgridComponent
+    StudentgridComponent,
+    MoistDirective
   ],
   imports: [
     BrowserModule,
@@ -25,4 +27,6 @@ import { StudentgridComponent } from './comp/studentgrid/studentgrid.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }

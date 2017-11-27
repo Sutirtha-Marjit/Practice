@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MoistDirective} from '../../directives/moist.directive';
 import {Student} from '../../shared/Student';
 
 @Component({
