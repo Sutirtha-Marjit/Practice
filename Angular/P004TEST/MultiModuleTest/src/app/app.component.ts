@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {GlobalPropertyManagerService} from './services/global-property-manager.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  requestServed:number = 0;
+
+  constructor(private globalPropertyManager:GlobalPropertyManagerService){
+    this.requestServed = globalPropertyManager.alertCount;
+    
+
+  }
+
+  updateReqNo(){
+    this.globalPropertyManager.updateCount();
+    this.requestServed = this.globalPropertyManager.alertCount;
+  }
+
 }

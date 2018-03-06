@@ -1,0 +1,15 @@
+<h2>Business Funds</h2>
+<ol>
+  <li (click)="clickOnFundButton(i)" *ngFor="let i of businessFundCollection"><a>{{i}}</a></li>
+</ol>
+
+<div *ngIf="normalList; then normalList else orderedList">
+</div>
+
+<ng-template #normalList>
+<h3>NORMAL</h3>
+</ng-template>
+
+<ng-template #orderedList>
+<h3>ORDER</h3>
+</ng-template>
