@@ -31,7 +31,7 @@ const appRouteArray:Array<Route> =[
 
 @NgModule({
     imports:[
-        RouterModule.forRoot(appRouteArray,{enableTracing:true})        
+        RouterModule.forRoot(appRouteArray,{enableTracing:false})        
     ],
     declarations:[],
     providers:[],
