@@ -27,13 +27,10 @@ export class VendorDashBoardComponent implements OnInit {
       vendorEmail: this.vendorEmail,
       vendorPhone: this.vendorPhone,
     });
-
-    
-    
-
    }
 
   ngOnInit() {
+    
   }
 
 }
