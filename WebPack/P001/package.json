@@ -1,0 +1,17 @@
+{
+  "name": "p001",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack:build": "webpack",
+    "start":"node output_dist/main.js"
+  },
+  "author": "sutirtha.marjit@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
