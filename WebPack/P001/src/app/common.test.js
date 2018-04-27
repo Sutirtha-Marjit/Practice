@@ -1,6 +1,15 @@
+
+import AccurateTest from './accurate.test';
 class CommonTest{
+
     constructor(){
         console.log('CommonTest');
+        if(AccurateTest){
+            console.dir(typeof AccurateTest);
+            console.dir(typeof AccurateTest);
+            this.acc = new AccurateTest();
+        }
+        
     }
 
     pool(){
@@ -8,3 +17,7 @@ class CommonTest{
     }
 
 }
+
+let d = new CommonTest();
+
+
