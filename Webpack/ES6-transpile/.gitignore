@@ -1,3 +1,7 @@
-./node_modules
-./build
-./package-lock.json
+node_modules
+node_modules/**/*
+node_modules/*
+build
+build/*
+build/*.js
+package-lock.json
