@@ -8,6 +8,7 @@ class Application{
         const masterDIV = document.createElement('div');
         masterDIV.innerHTML = '<p class="testdiv">Hello!</p>';
         document.body.appendChild(masterDIV);
+
     }
 }
 

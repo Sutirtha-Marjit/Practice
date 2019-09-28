@@ -1,27 +1,21 @@
-let path = require("path");
-let JSTTEST = /\.js?/;
-let DIST_DIR = path.resolve(__dirname,"dist");
-let SRC_DIR = path.resolve(__dirname,"source");
+const path = require('path');
+const WebPackConfig = {
 
-let CONFIG = {
-    entry:SRC_DIR+'/app/app.js',
+    entry:'./src/index.tsx',
     output:{
-        path:DIST_DIR,
-        filename:'react.app.bundle.js'
+        path: path.resolve(__dirname,"build"),
+        filename:'bundle.js'
     },
     module:{
-       rules:[
-           {
-                test:JSTTEST,
-                loader:'babel-loader',
-                
-           }
-           
-       ]
-    }
+        rules:[
+            {
+                test:/\.tsx?$/,
+                loader:"awesome-typescript-loader"`
+            }
+        ]
+    },
+    plugins:[]
 
 };
 
-
-
-module.exports = CONFIG;
+module.exports = WebPackConfig;
