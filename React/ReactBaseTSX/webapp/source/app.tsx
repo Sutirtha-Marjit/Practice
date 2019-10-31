@@ -12,6 +12,8 @@ export class Application extends React.Component{
             <h3 className="text-primary">Welcome to React TSX App</h3>
             <hr/>
             <small>App is configured with TypeScript and React</small>
+            <br/>
+            <small className="test-class"> This is customized LESS class</small>
         </div>;
 
         return rootTSX;

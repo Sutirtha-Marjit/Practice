@@ -20,7 +20,8 @@ const additionalCSS = new HtmlWebpackTagsPlugin({
 const WebpackConfig = {
     mode:'production',
     devtool: 'source-map',
-    entry: path.resolve(__dirname,'./webapp/source/app.tsx'),
+    //entry: path.resolve(__dirname,'./webapp/source/app.tsx'),
+    entry: path.resolve(__dirname,'./webapp/source/app.main.js'),
     output:{
         path:path.resolve(__dirname,'./webapp/build'),
         filename:'bundle.js'
@@ -42,6 +43,20 @@ const WebpackConfig = {
     ],
     module:{
         rules:[
+            {
+                test: /\.less$/,
+                loader: [
+                    {
+                        loader: 'style-loader', // creates style nodes from JS strings
+                      },
+                      {
+                        loader: 'css-loader', // translates CSS into CommonJS
+                      },
+                      {
+                        loader: 'less-loader', // compiles Less to CSS
+                      }
+                ]
+            },
             {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [
