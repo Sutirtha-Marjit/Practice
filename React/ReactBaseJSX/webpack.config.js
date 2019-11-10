@@ -16,7 +16,7 @@ const dynamicHTMLGenerator = new HtmlWebpackPlugin({
 });
 
 const copyPlugin = new CopyPlugin([
-    {from: './webapp/source/images', to: 'images'}
+    { from: './webapp/source/images', to: 'images' }
 ])
 
 const additionalCSS = new HtmlWebpackTagsPlugin({
@@ -48,14 +48,25 @@ const WebpackConfig = {
         additionalCSS,
         copyPlugin
     ],
-    module:{
-        rules:[
+    module: {
+        rules: [
+            /*{
+                test:/\.(js|jsx)$/,
+                enforce: 'pre',
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: `jshint-loader`,
+                        options: {}
+                    }
+                ]
+            },*/
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
-                options:{
-                    presets:['@babel/preset-react','@babel/preset-env']
+                options: {
+                    presets: ['@babel/preset-react', '@babel/preset-env']
                 }
             },
             {
@@ -63,13 +74,13 @@ const WebpackConfig = {
                 loader: [
                     {
                         loader: 'style-loader', // creates style nodes from JS strings
-                      },
-                      {
+                    },
+                    {
                         loader: 'css-loader', // translates CSS into CommonJS
-                      },
-                      {
+                    },
+                    {
                         loader: 'less-loader', // compiles Less to CSS
-                      }
+                    }
                 ]
             }
         ]
