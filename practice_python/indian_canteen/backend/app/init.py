@@ -1,11 +1,10 @@
 #main init file
 
 from flask import Flask
-from routes.init import init_app
+from app.routes.init import init_app
 
-app = Flask(__name__)
-
-init_app(app)
-
-if __name__ == "__main__":
+def start():
+    print("Flask Routing started ...")
+    app = Flask(__name__)
+    init_app(app)
     app.run()
